@@ -340,6 +340,11 @@ button:focus {
   font-size: 1.2em !important;
   text-align: left;
 }
+  .img-fluid {
+  width: 700px;
+  height: 700px;
+}
+
 
 .home-about-social {
   text-align: center !important;
