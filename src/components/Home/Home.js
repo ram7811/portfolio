@@ -49,57 +49,76 @@ function Home() {
       </Container>
       <Home2 />
 
-      <Container>
+      <Container className="contact_form">
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
-          <Col md={12} className="home-about-social">
-            <h1>Find Me On</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/ram7811"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="mailto:ramkumarramu825@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillMail/>
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="www.linkedin.com/in/ram-kumar-0a996a268"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/_.ram.exe_?igsh=MWZwNGR4cDM5YWQ0Zw=="
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
+          <Col md={12} className="forms" >
+          <h2 className="Contact">Contact Me</h2>
+
+  <form 
+    action="https://formsubmit.co/ramkumarramu825@gmail.com" 
+    method="POST"
+  >
+    {/* Disable spam */}
+    <input type="hidden" name="_captcha" value="false" />
+
+    {/* Redirect to your site after submit */}
+    <input type="hidden" name="_next" value="https://ramkumar78.netlify.app/" />
+
+    <div className="form-group" style={{ marginBottom: "15px" }}>
+      <label className="purple">Name</label>
+      <input 
+        type="text" 
+        name="name" 
+        required 
+        className="form-control" 
+        placeholder="Enter your name" 
+      />
+    </div>
+
+    <div className="form-group" style={{ marginBottom: "15px" }}>
+      <label className="purple">Email</label>
+      <input 
+        type="email" 
+        name="email" 
+        required 
+        className="form-control" 
+        placeholder="Enter your email" 
+      />
+    </div>
+
+    <div className="form-group" style={{ marginBottom: "15px" }}>
+      <label className="purple">Subject</label>
+      <input 
+        type="text" 
+        name="subject" 
+        className="form-control" 
+        placeholder="Enter subject" 
+      />
+    </div>
+
+    <div className="form-group" style={{ marginBottom: "15px" }}>
+      <label className="purple">Description</label>
+      <textarea 
+        name="message" 
+        rows="5" 
+        required 
+        className="form-control" 
+        placeholder="Write your message"
+      ></textarea>
+    </div>
+
+    <button 
+      type="submit" 
+      className="btn btn-primary"
+      style={{ marginTop: "10px" }}
+    >
+      Submit
+    </button>
+  </form>
+          
           </Col>
         </Row>
+        
       </Container>
     </section>
   );

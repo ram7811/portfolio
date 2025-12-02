@@ -764,3 +764,36 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.forms input,
+.forms textarea {
+  background: #0a0a23;
+  color: #fff;
+  border: 1px solid #6c45d3;
+  width: 600px;
+  
+}
+
+.forms label {
+  font-weight: bold;
+}
+
+.forms .btn-primary {
+  background-color: #6c45d3;
+  border: none;
+}
+
+.contact_form{
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contact{
+  color:#c770f0;
+  text-transform: uppercase;
+}
+
+.purple >label{
+  text-align: left;
+}
